@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h2>User Profile</h2>
+<p>
+  Username: <span id="username"></span><br>
+  Email: <span id="email"></span>
+</p>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  document.getElementById('username').textContent = params.get('username');
+  document.getElementById('email').textContent = params.get('email');
+</script>
+</body>
+</html>
